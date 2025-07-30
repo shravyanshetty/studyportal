@@ -20,7 +20,7 @@ function register(){
         localStorage.setItem("regusername",username);
         alert("Registered successfully!!");
         console.log("redirecting to home......")
-        window.location.href="port.html";
+        window.location.href="index.html";
     
     return;
 }
@@ -52,7 +52,7 @@ function login(){
         alert("Login successfull!");
         console.log("redirecting to home......")
 
-        window.location.href="port.html";
+        window.location.href="index.html";
 }}}}
 
 
