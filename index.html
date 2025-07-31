@@ -1,104 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="UTF-8">
+        <title>studyportal-login</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>studyportal</title>
-<link rel="stylesheet" href="port.css">
+         <link rel="stylesheet"  href="reglog.css">
+
     </head>
 
     <body>
-        <div class="container">
-        
-        
-        
-        <header class="navmain"> 
-            <div class="logo">STUDY PORTAL</div>
-            <nav id="navbar">
-                <ul class="navlink">
-                    <li>  <a href='#'>Home</a>  </li>
-                    <li>  <a href='#about'>About</a>  </li>
-                    <li>  <a href='#contact'>Contact</a>  </li>
-                    <button class="logout"><a class="exit" href="log.html">Logout</a></button>
-                </ul>
-                
-            </nav>
-        </header>
+        <div class="container" >
+        <div class="form-box login"> 
+            <form action=" ">
+                <h1> Login</h1>
+                    <div class="input-box">
+                        <input id="logusername" type="text" placeholder="username" required>
 
-        
-    <section class="study">
-        <div class="studysub">
-            <h1>Study anytime,<br>wherever you are</h1>  
-        </div>
-
-        <div class="studyimg">
-            <img src="study3.jpg">
-        </div>
-    </section> 
-    
-      <p id="para" >Start your preparation today!!</p>
-        <section class="search-section">  
-              <form id="searchform">
-                        <select id="branch" >
-                            <option value="">Select Branch</option>
-                            <option value="cs" > CSE</option>
-                            <option value="ai" > AIML</option>
-                        </select>
+                    </div>
                     
-                        <select id="year" >
-                            <option value="">Select Year</option>
-                            <option value="1st">1st Year</option>
-                            <option value="2nd">2nd Year</option>
-                        </select>
-
-                        <select id="typep" >
-                            <option value="">Select Type</option>
-                            <option value="Sem">Semester QP</option>
-                            <option value="Cie">CIE QP</option>
-                        </select>
-
-                    <button type="submit">Search</button>
-                
-               </form>
-        </section>
-    
-    </div>
-
-    <section id="about">
-        <h1>About Study Portal</h1>
-
-
-        <p>Study Portal is a dedicated platform designed to help students access
-            academic resources in one place. Instead of searching through scattered
-            messages or WhatsApp groups, students can now easily find and download:</p>
-            <ul class="lists">
-                <li>Previous year question papers</li>
-                <li>CIE question papers</li>
-            </ul>
-       <p> My goal is to save students' time and reduce stress during exam preparation
-        by providing a well-organized, branch-wise and year-wise collection of resources.
-         Whether you're revising at midnight or just getting started, Study Portal is 
-         always here to support your academic journey- anytime,anywhere.
-        </p>
-
-    </section>
-
-    <section id="contact">
-        <h1>Contact Us</h1>
-        <p> If you have any questions, feedback, or need help, feel free to reach out!</p>
-
-            <form class="feedback">
-                <input type="text" placeholder="Your Name" required><br>
-                <input type="email" placeholder="Your Email" required><br>
-                <textarea placeholder="Message" required></textarea><br>
-                <button type="submit">Send</button>
-            </form>
-    </section>
-
-    <footer class="foot">
-        <p>&copy; 2025 Study Portal. All rights reserved.</p>
-     </footer>
-
-     <script src="reg.js"></script>
+                    <button type="button" onclick="login()" class="button">Login</button>
+                    
+                    <p>Not registered yet?</p>
+                    
+                <div class="reglink">
+                    <a href="reg.html">Register here</a>
+                </div>
+             </form>
+        </div>
+        </div>
+        
+    <script src="reg.js"></script>
 </body>
 </html>
